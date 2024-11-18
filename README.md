@@ -5,16 +5,16 @@
 To get started with this template, simply paste this command into your terminal:
 
 ```bash
-git clone https://gitlab.com/ronbouarm/elysia-base.git
+git clone https://github.com/Klanarm/ecommerce.git
+# setup backend
+cd back
 bun install
-```
-
-## Development
-
-To start the development server run:
-
-```bash
+# setup .env
 bun run localhost
-```
+# setup frontend
+cd front
+npm install
+# setup .env
+npm run dev
 
-Open http://localhost:3000/swagger with your browser to see the result.
+```
