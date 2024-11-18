@@ -1,0 +1,9 @@
+[
+    {
+        "item_name": "Luffy",
+        "item_picture": "http://localhost:3001/api/v1/upload/modelLufy.jpg",
+        "quantity": 50,
+        "cost": 500,
+        "category_id": "d256aa0a-bff8-405e-9122-9218edf9a502"
+    }
+]
