@@ -8,7 +8,10 @@ import useStore from "../hook/useStore";
 export default function Login() {
   const router = useRouter();
   const { setAuth, setAccInfo, auth } = useStore();
-  const [form, setForm] = useState({ email: "", password: "" });
+  const [form, setForm] = useState({
+    email: "superadmin@test.com",
+    password: "12345678",
+  });
 
   useEffect(() => {
     if (auth.token) {
@@ -59,6 +62,7 @@ export default function Login() {
                   type="email"
                   placeholder="Enter your email"
                   className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                  defaultValue="superadmin@test.com"
                   onChange={(e) => {
                     setForm({ ...form, email: e.target.value });
                   }}
@@ -72,6 +76,7 @@ export default function Login() {
                   type="password"
                   placeholder="Enter your password"
                   className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-emerald-600"
+                  defaultValue="12345678"
                   onChange={(e) => {
                     setForm({ ...form, password: e.target.value });
                   }}

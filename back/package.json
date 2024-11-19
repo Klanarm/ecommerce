@@ -3,7 +3,8 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "localhost": "cross-env NODE_ENV=localhost bun run --watch src/index.ts"
+    "localhost": "cross-env NODE_ENV=localhost bun run --watch src/index.ts",
+    "pm2-dev": "pm2-runtime start --name=api bun -- run localhost"
   },
   "dependencies": {
     "@elysiajs/bearer": "^1.1.1",
